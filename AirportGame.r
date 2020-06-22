@@ -1,0 +1,7 @@
+COALITIONS <- c(26,27,55,57,53,81,83,82,84,110,108,110,110,110,110)
+AIR<-DefineGame(4,COALITIONS)
+summary(AIR)
+NAMES <- c("Airline 1","Airline 2","Airline 3","Airline 4")
+AIRSHAPLEY<-ShapleyValue(AIR,NAMES)
+summary(AIRSHAPLEY)
+AIRNUCLEOLUS <- Nucleolus(AIR,type="Cost")
